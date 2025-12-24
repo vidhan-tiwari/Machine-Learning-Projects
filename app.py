@@ -116,8 +116,8 @@ with tab1:
     col1, col2 = st.columns(2)
     
     with col1:
-        m_username = st.text_input("Username", placeholder="e.g. john_doe")
-        m_fullname = st.text_input("Full Name", placeholder="e.g. John Doe")
+        m_username = st.text_input("Username", placeholder="e.g. vidh.an__01")
+        m_fullname = st.text_input("Full Name", placeholder="e.g. Vidhan Tiwari")
         
         bio_input = st.text_input("Bio (Paste text OR enter length)", placeholder="e.g. 'I love travel' OR '150'")
         if bio_input.strip().isdigit():
@@ -135,6 +135,7 @@ with tab1:
         m_has_pic = st.checkbox("Has Profile Picture?", value=True)
         m_is_private = st.checkbox("Is Private Account?", value=False)
         m_has_url = st.checkbox("Has External URL in Bio?", value=False)
+        m_is_verified = st.checkbox("Has Blue Tick (Verified)?", value=False)
 
     if st.button("Predict (Manual)"):
         # missing fields validation
@@ -233,5 +234,6 @@ with tab2:
                 st.error(f"Error details: {e}")
 
                 st.warning("Instagram might have rate-limited the request. Please copy the data visible on Instagram and use the 'Manual Entry' tab.")
+
 
 
