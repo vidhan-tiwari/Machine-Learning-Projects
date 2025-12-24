@@ -118,7 +118,13 @@ with tab1:
     with col1:
         m_username = st.text_input("Username", placeholder="e.g. john_doe")
         m_fullname = st.text_input("Full Name", placeholder="e.g. John Doe")
-        m_desc_len = st.number_input("Bio Length (Characters)", min_value=0, value=0)
+        
+        bio_input = st.text_input("Bio (Paste text OR enter length)", placeholder="e.g. 'I love travel' OR '150'")
+        if bio_input.strip().isdigit():
+            m_desc_len = int(bio_input.strip())
+        else:
+            m_desc_len = len(bio_input)
+            
         m_posts = st.number_input("Number of Posts", min_value=0, value=0)
         
     with col2:
@@ -227,3 +233,4 @@ with tab2:
                 st.error(f"Error details: {e}")
 
                 st.warning("Instagram might have rate-limited the request. Please copy the data visible on Instagram and use the 'Manual Entry' tab.")
+
