@@ -109,7 +109,7 @@ tab1, tab2 = st.tabs(["AUTOMATIC PATHWAY "," Manual-DATA-Entry PATHWAY "])
 
 
 with tab2:
-    st.header("Manual Data Entry")
+    st.header("Manual Data Entry.")
     st.write("Enter the profile details manually:")
     
     col1, col2 = st.columns(2)
@@ -252,6 +252,7 @@ with tab1:
                 status_placeholder.empty()
                 st.error(f"An unexpected error occurred: {e}")
         
+
 
 
 
