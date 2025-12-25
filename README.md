@@ -24,7 +24,7 @@ Three models were trained and evaluated during the research phase. The **ANN** w
 
 | Model | Accuracy | Notes |
 | :--- | :--- | :--- |
-| **Artificial Neural Network (ANN)** | **96.2%** | *Selected for App.* 2-layer dense network. Low loss (0.098). |
+| **Artificial Neural Network (ANN)** | **97%** | *Selected for App.* 2-layer dense network. Low loss (0.098). |
 | **Logistic Regression (Lasso)** | 90.0% | Scikit-learn implementation with L1 regularization. |
 | **Logistic Regression (Custom)** | ~90.0% | Custom NumPy implementation from scratch. |
 
