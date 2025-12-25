@@ -105,7 +105,7 @@ st.title("🕵️ Instagram Fake Account Detector")
 st.markdown("Use this tool to analyze Instagram accounts using Deep Learning.")
 
 # Tabs for selection
-tab1, tab2 = st.tabs(["AUTOMATIC PATHWAY "," Manual-DATA-Entry PATHWAY "])
+tab1, tab2 = st.tabs(["AUTOMATIC PATHWAY ","MANUAL-DATA-ENTRY-PATHWAY"])
 
 
 with tab2:
@@ -252,6 +252,7 @@ with tab1:
                 status_placeholder.empty()
                 st.error(f"An unexpected error occurred: {e}")
         
+
 
 
 
